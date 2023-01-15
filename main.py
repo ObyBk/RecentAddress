@@ -1,6 +1,6 @@
 # Name: Oby Bkkourh
 # Project's name: Find recent addresses
-
+# Date: 1/15/2023
 
 # This function takes a list of tuples, where each tuple contains an address
 # string and a date string in this format: "L3, 20 queen road,1992" from the user input
@@ -17,6 +17,7 @@ def most_recent_date(addresses_and_dates):
             most_recent_dates[address] = date
     return most_recent_dates
 
+
 addresses_and_dates = []
 
 # This loop is meant to take user input and then put it in a tuple and then separate
@@ -30,9 +31,5 @@ while True:
         TheIn = tuple(input_str.split(",")[1:])
         addresses_and_dates.append(TheIn)
 
-
-
-
-
+# this is meant to call the function and print the results out.
 print(most_recent_date(addresses_and_dates))
-
