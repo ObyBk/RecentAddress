@@ -24,7 +24,7 @@ addresses_and_dates = []
 # commas to find the required values
 # or if user input is "done" show results
 while True:
-    input_str = input("Enter an address and date in the format 'address,YYYY-MM-DD' or 'done' to finish: ")
+    input_str = input("Enter an address and date in the format 'L#,address,YYYY' or 'done' to finish: ")
     if input_str.strip().lower() == 'done':
         break
     else:
@@ -32,4 +32,4 @@ while True:
         addresses_and_dates.append(TheIn)
 
 # this is meant to call the function and print the results out.
-print(most_recent_date(addresses_and_dates))
+print(f"The most recent added addresses are :", most_recent_date(addresses_and_dates))
