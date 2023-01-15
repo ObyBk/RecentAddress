@@ -24,7 +24,7 @@ addresses_and_dates = []
 # commas to find the required values
 # or if user input is "done" show results
 while True:
-    input_str = input("Enter an address and date in the format 'L#,address,YYYY' or 'done' to finish: ")
+    input_str = input("Enter an address and date in the format 'L#,address,YYYY' or 'done' to ge the results : ")
     if input_str.strip().lower() == 'done':
         break
     else:
